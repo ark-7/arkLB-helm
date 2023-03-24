@@ -11,9 +11,30 @@ entries:
           email: aadhitya864@gmail.com
     apiVersion: v2
     appVersion: 0.1.3
-    created: "2023-03-23T21:50:02.507777795+05:30"
+    created: "2023-03-24T14:03:31.172671212+05:30"
     description: A Helm chart for arkLB - eBPF/XDP based project
-    digest: b1e51eba7a5df1e2840616c5f4e69afa1e58493cb68de0527ec701c5651e0c47
+    digest: f48700df3e21b7881236c36c1bd4850b0b866949922161644298a3a8fc88d05d
+    maintainers:
+    - email: aadhitya864@gmail.com
+      name: Aadhitya A
+    name: arklb
+    type: application
+    urls:
+    - arklb-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/license: GPL-3.0
+      artifacthub.io/links: |
+        - name: home
+          url: https://github.com/ark-7/
+      artifacthub.io/maintainers: |
+        - name: Aadhitya A
+          email: aadhitya864@gmail.com
+    apiVersion: v2
+    appVersion: 0.1.3
+    created: "2023-03-24T14:03:31.148569608+05:30"
+    description: A Helm chart for arkLB - eBPF/XDP based project
+    digest: 2494750fd2966d88a58b7c6b37a0724639f29e2422401082ad60968b994f979e
     maintainers:
     - email: aadhitya864@gmail.com
       name: Aadhitya A
@@ -22,4 +43,4 @@ entries:
     urls:
     - arklb-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-23T21:50:02.480265188+05:30"
+generated: "2023-03-24T14:03:31.115495249+05:30"
