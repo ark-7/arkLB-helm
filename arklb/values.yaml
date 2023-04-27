@@ -6,10 +6,10 @@ replicaCount: 1
 restartPolicy: Always
 
 image:
-  repository: aerox86/arklb
+  repository: aerox86/arklb-rust
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: latest-stable
+  tag: latest
 
 imagePullSecrets: []
 
