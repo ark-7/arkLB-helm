@@ -5,11 +5,33 @@
 replicaCount: 1
 restartPolicy: Always
 
-image:
+image1:
+  repository: aerox86/arklb
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: latest
+  tty: true
+
+image2:
   repository: aerox86/arklb-rust
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: latest
+  tty: true
+
+image3:
+  repository: nginxdemos/hello
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: plain-text
+  tty: true
+
+image3r:
+  repository: nginxdemos/hello
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: plain-text
+  tty: true
 
 imagePullSecrets: []
 
@@ -27,7 +49,8 @@ podAnnotations: {}
 podSecurityContext: {}
   # fsGroup: 2000
 
-securityContext: {}
+securityContext: 
+  privileged: true
   # capabilities:
   #   drop:
   #   - ALL

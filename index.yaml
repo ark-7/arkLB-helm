@@ -10,8 +10,30 @@ entries:
         - name: Aadhitya A
           email: aadhitya864@gmail.com
     apiVersion: v2
+    appVersion: 0.1.6
+    created: "2023-05-14T19:38:08.776938813+05:30"
+    description: A Helm chart for arkLB - eBPF/XDP based project
+    digest: 483a95bd7b4fc7a9d1cffaea1f90a714afdff69a59529f87c9c5d7416bd736a4
+    icon: https://avatars.githubusercontent.com/u/128674337?s=200&v=4
+    maintainers:
+    - email: aadhitya864@gmail.com
+      name: Aadhitya A
+    name: arklb
+    type: application
+    urls:
+    - arklb-0.1.3.tgz
+    version: 0.1.3
+  - annotations:
+      artifacthub.io/license: GPL-3.0
+      artifacthub.io/links: |
+        - name: home
+          url: https://github.com/ark-7/
+      artifacthub.io/maintainers: |
+        - name: Aadhitya A
+          email: aadhitya864@gmail.com
+    apiVersion: v2
     appVersion: 0.1.4
-    created: "2023-04-27T06:08:37.765760421Z"
+    created: "2023-05-14T19:38:08.767496662+05:30"
     description: A Helm chart for arkLB - eBPF/XDP based project
     digest: 9893f2eca45da5ef3a02fc2d0487fdc589ff5b9a45553d4ecdc735aa5e65d85b
     maintainers:
@@ -20,7 +42,7 @@ entries:
     name: arklb
     type: application
     urls:
-    - https://ark-7.github.io/arkLB-helm/arklb-0.1.2.tgz
+    - arklb-0.1.2.tgz
     version: 0.1.2
   - annotations:
       artifacthub.io/license: GPL-3.0
@@ -32,7 +54,7 @@ entries:
           email: aadhitya864@gmail.com
     apiVersion: v2
     appVersion: 0.1.3
-    created: "2023-04-27T06:08:37.765178461Z"
+    created: "2023-05-14T19:38:08.735314959+05:30"
     description: A Helm chart for arkLB - eBPF/XDP based project
     digest: f48700df3e21b7881236c36c1bd4850b0b866949922161644298a3a8fc88d05d
     maintainers:
@@ -41,7 +63,7 @@ entries:
     name: arklb
     type: application
     urls:
-    - https://ark-7.github.io/arkLB-helm/arklb-0.1.1.tgz
+    - arklb-0.1.1.tgz
     version: 0.1.1
   - annotations:
       artifacthub.io/license: GPL-3.0
@@ -53,7 +75,7 @@ entries:
           email: aadhitya864@gmail.com
     apiVersion: v2
     appVersion: 0.1.3
-    created: "2023-04-27T06:08:37.764635731Z"
+    created: "2023-05-14T19:38:08.696170922+05:30"
     description: A Helm chart for arkLB - eBPF/XDP based project
     digest: 2494750fd2966d88a58b7c6b37a0724639f29e2422401082ad60968b994f979e
     maintainers:
@@ -62,6 +84,6 @@ entries:
     name: arklb
     type: application
     urls:
-    - https://ark-7.github.io/arkLB-helm/arklb-0.1.0.tgz
+    - arklb-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-27T06:08:37.763794221Z"
+generated: "2023-05-14T19:38:08.563001678+05:30"
