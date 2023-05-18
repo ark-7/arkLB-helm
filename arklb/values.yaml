@@ -12,20 +12,6 @@ image1:
   tag: latest
   tty: true
 
-image2:
-  repository: aerox86/arklb-rust
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: latest
-  tty: true
-
-image3:
-  repository: nginxdemos/hello
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: plain-text
-  tty: true
-
 image3r:
   repository: nginxdemos/hello
   pullPolicy: IfNotPresent
@@ -59,8 +45,8 @@ securityContext:
   # runAsUser: 1000
 
 service:
-  type: LoadBalancer
-  port: 80
+  type: NodePort
+  port: 8088
 
 ingress:
   enabled: false

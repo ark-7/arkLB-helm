@@ -48,15 +48,6 @@ spec:
               protocol: TCP
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-        - name: ark-node2
-          image: "{{ .Values.image3.repository }}:{{ .Values.image3.tag | default .Chart.AppVersion }}"
-          imagePullPolicy: {{ .Values.image3.pullPolicy }}
-          ports:
-            - name: http
-              containerPort: {{ .Values.service.port }}
-              protocol: TCP
-          resources:
-            {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
