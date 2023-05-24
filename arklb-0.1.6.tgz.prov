@@ -1,0 +1,38 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/license: GPL-3.0
+  artifacthub.io/links: |
+    - name: home
+      url: https://github.com/ark-7/
+  artifacthub.io/maintainers: |
+    - name: Aadhitya A
+      email: aadhitya864@gmail.com
+apiVersion: v2
+appVersion: 0.1.6
+description: A Helm chart for arkLB - eBPF/XDP based project
+icon: https://avatars.githubusercontent.com/u/128674337?s=200&v=4
+maintainers:
+- - email: aadhitya864@gmail.com
+  name: Aadhitya A
+name: arklb
+type: application
+version: 0.1.6
+
+...
+files:
+  arklb-0.1.6.tgz: sha256:98436fce842fb0ce5616c371faad421c2caf73816a1e73d57e5d25008083f53d
+-----BEGIN PGP SIGNATURE-----
+
+wsDcBAEBCgAQBQJkbjmmCRBGhQRvY8noVgAAuxUMAKyyA8KxHNbifXc+z0XBqH1l
+w4QreHFqNxaqJGY5jDVNS4QpnF6ezFeKPLZHZGvDYsGBzx5Pqmq9Xpr88v8+SH85
+HoSssuGZyEGYyZakbaTZ8cvImwzYEGOB41e1yKvqQeIFtXZ46YxoWXCqKiboAHb9
+Df3dPe5HnkEpv8Cmxpfhs+a9xeqaIaxFgSuwGdd3ZGTQEE30xONG4N5Hh9zMkhHS
+N1ft2qV0M618AJtQmu7urI004BBI+H1VM//hZIFBWIGoU2KuoZwchQnhw9ksNLe1
+2T6EyjnuK9odPdLAtIk3Gv7rQsMv8chChV3EMM28ce0mYWvVrWNwXt2C9xsYoX70
+5J78h5rBGucHaDs46CdbUMhLkKClC3tM1gHz98JoI1DR36dHlKpkTwzr6CEsDbsx
+h6+1ImD4SxTW3iilXTZjf2E0W/eu1nofGBHRRsyu1xtiP4RCE8B2vcYAkSCjSFKu
+VcUxe6bjyP/yMAcH4dVRotdsqXyiGitIEP9X7k7pVw==
+=luUo
+-----END PGP SIGNATURE-----
