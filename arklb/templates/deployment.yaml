@@ -31,17 +31,8 @@ spec:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "{{ .Values.image1.repository }}:{{ .Values.image1.tag | default .Chart.AppVersion }}"
-          imagePullPolicy: {{ .Values.image1.pullPolicy }}
-          ports:
-            - name: http
-              containerPort: {{ .Values.service.port }}
-              protocol: TCP
-          resources:
-            {{- toYaml .Values.resources | nindent 12 }}
-        - name: ark-node1
-          image: "{{ .Values.image3r.repository }}:{{ .Values.image3r.tag | default .Chart.AppVersion }}"
-          imagePullPolicy: {{ .Values.image3r.pullPolicy }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}

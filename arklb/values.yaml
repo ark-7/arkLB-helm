@@ -5,18 +5,11 @@
 replicaCount: 1
 restartPolicy: Always
 
-image1:
+image:
   repository: aerox86/arklb
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: latest
-  tty: true
-
-image3r:
-  repository: nginxdemos/hello
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: plain-text
   tty: true
 
 imagePullSecrets: []
@@ -28,7 +21,7 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: "arklb"
+  name: "ark"
 
 podAnnotations: {}
 
@@ -36,7 +29,7 @@ podSecurityContext: {}
   # fsGroup: 2000
 
 securityContext: 
-  privileged: true
+  # privileged: true
   # capabilities:
   #   drop:
   #   - ALL
@@ -46,7 +39,7 @@ securityContext:
 
 service:
   type: NodePort
-  port: 8088
+  port: 8081
 
 ingress:
   enabled: false
