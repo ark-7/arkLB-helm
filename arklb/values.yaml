@@ -3,16 +3,16 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
-restartPolicy: Always
 
 image:
   repository: aerox86/arklb
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  #tag: latest
-  tty: true
+  tag: ""
 
 imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -21,15 +21,14 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: "ark"
+  name: ""
 
 podAnnotations: {}
 
 podSecurityContext: {}
   # fsGroup: 2000
 
-securityContext: 
-  privileged: true
+securityContext: {}
   # capabilities:
   #   drop:
   #   - ALL
@@ -40,7 +39,6 @@ securityContext:
 service:
   type: LoadBalancer
   port: 80
-  target_port: 8085
 
 ingress:
   enabled: false
@@ -73,8 +71,8 @@ resources: {}
 autoscaling:
   enabled: false
   minReplicas: 1
-  maxReplicas: 10
-  # targetCPUUtilizationPercentage: 80
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 
 nodeSelector: {}
